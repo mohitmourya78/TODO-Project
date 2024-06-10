@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css" class="src">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="logo"></a>
+        <ul class="nav-links">
+          <li class="li nav-li"><a href="#">Home</a></li>
+          <li class="li nav-li "><a href="#">About</a></li>
+          <li class="li nav-li "><a href="#">Services</a></li>
+          <li class="li nav-li "><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+
+      <div class="logo">
+        <img src="./img/png-transparent-todo-sketch-note-list-tasks-removebg-preview(1).png" alt="logo is here">
+      </div>
+
+      <h1 class="name"> Created by Mohit Mourya</h1>
+
+    <div class="container">
+        <h2 class="flex justify-content align-items">What is your list item's?</h2>
+        <div class="adding flex justify-content align-items">
+            <input type="text" id="listitem" placeholder="Enter the item">
+            <button id="myaddbtn" onclick="listprint()">Add list</button>
+        </div>
+        <div class="box1 flex justify-content align-items">
+            <ol id="list"></ol>
+        </div>
+        <h5 id="warningMessage" class="warning flex justify-content align-items" style="display: none;">Please enter a
+            list item.</h5>
+
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
